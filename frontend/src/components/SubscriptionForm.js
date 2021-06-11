@@ -5,7 +5,7 @@ function SubscriptionForm({ handleClick, enqueueSnackbar }) {
   const [email, setEmail] = useState("");
   const [age, setAge] = useState(0);
   const [checkTime, setCheckTime] = useState(false);
-  const [time, setTime] = useState(5);
+  const [time, setTime] = useState(60);
   const ref = useRef();
 
   useEffect(() => {

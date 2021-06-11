@@ -30,6 +30,7 @@ function SubscriptionList() {
                   <thead>
                     <tr className="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
                       <th className="py-3 px-6 text-left">Email</th>
+                      <th className="py-3 px-6 text-left">Age</th>
                       <th className="py-3 px-6 text-left">Created At</th>
                     </tr>
                   </thead>
@@ -39,6 +40,11 @@ function SubscriptionList() {
                         <td className="py-3 px-6 text-left whitespace-nowrap">
                           <div className="flex items-center">
                             <span className="font-medium">{sub.email}</span>
+                          </div>
+                        </td>
+                        <td className="py-3 px-6 text-left whitespace-nowrap">
+                          <div className="flex items-center">
+                            <span className="font-medium">{sub.age}</span>
                           </div>
                         </td>
                         <td className="py-3 px-6 text-left whitespace-nowrap">

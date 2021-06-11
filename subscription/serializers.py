@@ -8,4 +8,4 @@ class SubscriptionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Subscription
-        fields = ('email', 'created_on')
+        fields = ('email', 'age', 'created_on')

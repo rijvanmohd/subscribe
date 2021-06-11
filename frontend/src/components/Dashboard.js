@@ -4,8 +4,8 @@ import SubscriptionForm from "./SubscriptionForm";
 import { SubscribeAPI } from "../api/subscribe";
 
 function Dashboard(props) {
-  const handleSubscribe = (email) => {
-    const data = { email };
+  const handleSubscribe = (email, age) => {
+    const data = { email, age };
     SubscribeAPI.subscribe(data)
       .then((response) => {
         if (response.status === 201) {

@@ -9,3 +9,4 @@ from django.db import models
 class Subscription(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     email = models.EmailField(unique=True)
+    age = models.PositiveIntegerField(null=True, blank=True)
